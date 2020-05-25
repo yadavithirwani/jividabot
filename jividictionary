@@ -1,4 +1,4 @@
-
+import random
 name = "JividaBot"
 weather = "nice for some smokes"
 
@@ -13,10 +13,23 @@ jividictionary = {
   "what's today's weather?": [
       "the weather is {0}".format(weather),
       "it's {0} today".format(weather)],
-  "default": ["default message"],
+  "default": ["what O_o"],
   "what are you doing?": [
       "blazing ._.",
       "playing csgo ._.",
       "i'm coming over",
-      "waiting, why are you always late? ._."]
+      "waiting, why are you always late? ._.",
+      "I'm thinking about your boobs"],
+   "I love you": ["I love you too","love you babe","you're so cringy"]
 }
+
+
+# Use random.choice() to choose a matching response
+def responddict(message):
+    if message in responses:
+        bot_message = random.choice(jividictionary[message])
+    else:
+        bot_message = random.choice(jividictionary["default"])
+    return bot_message
+
+
