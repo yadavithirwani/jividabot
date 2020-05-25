@@ -1,0 +1,22 @@
+
+name = "JividaBot"
+weather = "nice for some smokes"
+
+# Define a dictionary containing a list of responses for each message
+#keys are the questions and list of vaues are all possibe answers for the question you ask your chatbot
+jividictionary = {
+  "what's your name?": [
+      "my name is {0}".format(name),
+      "they call me {0}".format(name),
+      "I go by {0}".format(name)
+   ],
+  "what's today's weather?": [
+      "the weather is {0}".format(weather),
+      "it's {0} today".format(weather)],
+  "default": ["default message"],
+  "what are you doing?": [
+      "blazing ._.",
+      "playing csgo ._.",
+      "i'm coming over",
+      "waiting, why are you always late? ._."]
+}
