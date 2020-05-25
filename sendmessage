@@ -1,0 +1,14 @@
+user_template = 'USER: ' #tere bhai ne global variable banadiya isko 
+bot_template = 'BOT: '
+
+# user ke bhi message likhne ka code likhne ka kya mamu 
+def send_message(message):
+    
+    print(user_template + "{}".format(message)) 
+    
+    response = respond(message) # ye pehle function banaya na toh use karo na mamu 
+    
+    print(bot_template + "{}".format(response))
+
+# bhai ko hello bol
+send_message("hello!")
