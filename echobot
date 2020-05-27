@@ -4,3 +4,6 @@ def respond(message):
     bot_message = 'I can hear you, you said: ' + message
     
     return bot_message
+
+# testing 
+respond('ondu gondu')
